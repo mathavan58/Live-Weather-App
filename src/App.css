@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#heat-index{
+    justify-content: space-between;
+}
+img {
+  background: transparent !important;
+}
+
+.dashboard {
+  background-image: url("https://t4.ftcdn.net/jpg/06/41/91/85/360_F_641918542_bL3O5qWqKmaVrxM12Qa1pp1owFvKKP3k.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "airquality weatherdatas sunmoon"
+    "airquality weatherindex weatherindex";
+  grid-template-columns: 0.7fr 2fr; 
+  grid-template-rows: auto auto auto; 
+  gap: 10px;
+}
+
+#Weather-Image-Add {
+  grid-area: header;
+}
+
+#air-quality {
+  grid-area: airquality;
+}
+
+#weather-datas {
+  grid-area: weatherdatas;
+}
+
+#sun-moon {
+  grid-area: sunmoon;
+}
+
+#weather-index {
+  grid-area: weatherindex;
+}
+
+/* Header/Nav styling */
+header {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+  color: #f5a623;
+}
+
+
+@media (max-width: 1024px) {
+  .dashboard {
+    grid-template-areas:
+      "header header"
+      "airquality weatherdatas sunmoon"
+      "weatherindex weatherindex";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.1fr 2fr 1fr;
+  }
+  nav ul {
+    gap: 10px;
+  }
+}
+@media (max-width: 1366px) {
+  .dashboard {
+    grid-template-areas:
+      "header header"
+      "airquality weatherdatas sunmoon"
+      "weatherindex weatherindex";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.2fr 2fr 1fr;
+  }
+  nav ul {
+    gap: 10px;
+  }
+}
+@media (max-width: 1400px) {
+  .dashboard {
+    grid-template-areas:
+      "header header"
+      "airquality weatherdatas sunmoon"
+      "weatherindex weatherindex";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.1fr 2fr 1fr;
+  }
+  nav ul {
+    gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-areas:
+      "header header"
+      "weatherdatas weatherdatas"
+      "airquality sunmoon"
+      "weatherindex weatherindex";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.6fr 0.8fr 0.4fr;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  #weather-datas{
+    padding-left: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    padding: 5px 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .dashboard {
+    grid-template-areas:
+      "header header"
+      "weatherdatas"
+      "airquality sunmoon"
+      "weatherindex weatherindex";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.7fr 0.7fr 0.7fr;
+  }
+}
