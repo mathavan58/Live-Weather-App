@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const WeatherContext = createContext();
-let key = "10ac7242efebf7168bbb3b2370287da0";
+let key = "3f36d9bad6438df385c36208c897f624";
 
 export default function WeatherProvider({ children }) {
   const [city, setCity] = useState("chennai");
