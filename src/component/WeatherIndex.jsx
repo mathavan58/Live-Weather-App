@@ -19,7 +19,7 @@ const WeatherIndex = () => {
               <h6 className="mb-4">Humidity</h6>
               <div className="d-flex justify-content-between align-items-center">
                 <FaHandHoldingWater />
-                <p className="m-0">{data.current.humidity} %</p>
+                <p className="m-0">{data?.current?.humidity} %</p>
               </div>
             </div>
 
@@ -27,7 +27,7 @@ const WeatherIndex = () => {
               <h6 className="mb-4">UV Index</h6>
               <div className="d-flex justify-content-between align-items-center">
                 <GiSunRadiations />
-                <p className="m-0">{data.current.uv_index} </p>
+                <p className="m-0">{data?.current?.uv_index} </p>
               </div>
             </div>
 
@@ -35,7 +35,7 @@ const WeatherIndex = () => {
               <h6 className="mb-4">Visibility</h6>
               <div className="d-flex justify-content-between align-items-center">
                 <PiEyeBold />
-                <p className="m-0">{data.current.visibility} Km</p>
+                <p className="m-0">{data?.current?.visibility} Km</p>
               </div>
             </div>
 
@@ -43,7 +43,7 @@ const WeatherIndex = () => {
               <h6 className="mb-4">Pressure</h6>
               <div className="d-flex justify-content-between align-items-center fs-5">
                 <BsArrowsCollapseVertical />
-                <p className="m-0">{data.current.pressure} hPa</p>
+                <p className="m-0">{data?.current?.pressure} hPa</p>
               </div>
             </div>
 
@@ -51,7 +51,7 @@ const WeatherIndex = () => {
               <h6 className="mb-4">Precipitation</h6>
               <div className="d-flex justify-content-between align-items-center">
                 <LuCloudSnow />
-                <p className="m-0">{data.current.precip} mm</p>
+                <p className="m-0">{data?.current?.precip} mm</p>
               </div>
             </div>
           </>

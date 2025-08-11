@@ -21,7 +21,7 @@ img {
     "header header header"
     "airquality weatherdatas sunmoon"
     "airquality weatherindex weatherindex";
-  grid-template-columns: 0.7fr 2fr; 
+  grid-template-columns: 0.7fr 2fr 1fr; 
   grid-template-rows: auto auto auto; 
   gap: 10px;
 }

@@ -21,11 +21,11 @@ const SunMoon = () => {
                 </div>
                 <div className="col-6 d-flex flex-column align-items-center">
                   <IoSunny size={40} className="mb-3 text-warning" />
-                  <p>{data.current.astro.sunrise}</p>
+                  <p>{data?.current?.astro?.sunrise}</p>
                 </div>
                 <div className="col-6 d-flex flex-column align-items-center">
                   <TiWeatherPartlySunny size={40} className="mb-2 text-warning" />
-                  <p>{data.current.astro.sunset}</p>
+                  <p>{data?.current?.astro?.sunset}</p>
                 </div>
               </div>
             )}
@@ -39,11 +39,11 @@ const SunMoon = () => {
                 <div className="col-6 d-flex flex-column align-items-center">
                   <IoMoon size={40} className="mb-3 text-light" />
 
-                  <p>{data.current.astro.moonrise}</p>
+                  <p>{data?.current?.astro?.moonrise}</p>
                 </div>
                 <div className="col-6 d-flex flex-column align-items-center">
                   <FaCloudMoon size={40} className="mb-2 text-light" />
-                  <p>{data.current.astro.moonset}</p>
+                  <p>{data?.current?.astro?.moonset}</p>
                 </div>
               </div>
             )}

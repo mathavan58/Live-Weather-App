@@ -64,39 +64,39 @@ const WeatherDatas = () => {
               <div className="col d-flex justify-content-center gap-3 mb-1">
                 <div className=" d-flex justify-content-center flex-column fs-5">
                   <img class="img-fluid "
-                  src={getWeatherImage(data.current.weather_descriptions[0])}
+                  src={getWeatherImage(data?.current?.weather_descriptions[0])}
                   alt="weather-mood"
                   style={{ width: "150px", height: "120px" }}
                 /> 
-                <p className=''>🌥️ Weather: {data.current.weather_descriptions[0]}</p>
+                <p className=''>🌥️ Weather: {data?.current?.weather_descriptions[0]}</p>
                 </div>
-                <p className="fs-2 ps-1 mt-5">🌡️ {data.current.temperature}°C</p>
+                <p className="fs-2 ps-1 mt-5">🌡️ {data?.current?.temperature}°C</p>
               </div>
 
               <h5 className="mb-3 ms-3 me-3 mt-1 fs-3 d-flex justify-content-center">
                 <span className='fs-4'><MdLocationOn /></span>
-                {data.location.name},{data.location.country}
+                {data?.location?.name},{data?.location?.country}
               </h5>
 
               <div className="col d-flex justify-content-center m-2">
-                <p className="me-5"><span className='me-1 fs-5'><FcCalendar /></span>{data.location.localtime}</p>
+                <p className="me-5"><span className='me-1 fs-5'><FcCalendar /></span>{data?.location?.localtime}</p>
                 <p className="ms-5 me-5">
-                  {data.current.is_day === "yes" ? "🌞 Day-time" : "🌙 Night-time"}
+                  {data?.current?.is_day === "yes" ? "🌞 Day-time" : "🌙 Night-time"}
                 </p>
               </div>
 
               <div className="col d-flex justify-content-center m-2">
                 <p className="btn btn-primary me-5">
-                  Wind speed : {data.current.wind_speed} (km/h)
+                  Wind speed : {data?.current?.wind_speed} (km/h)
                 </p>
                 <p className="btn btn-success me-5">
-                  wind_degree : {data.current.wind_degree} ({data.current.wind_dir})
+                  wind_degree : {data?.current?.wind_degree} ({data?.current?.wind_dir})
                 </p>
               </div>
 
               <div className="col">
                 <p className="d-flex m-1" id="heat-index">
-                  Heat-Index: <span>{data.current.feelslike}°C</span>
+                  Heat-Index: <span>{data?.current?.feelslike}°C</span>
                 </p>
               </div>
 

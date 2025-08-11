@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './component/header'
+import Header from './component/Header'
 import "./App.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import WeatherProvider from "./context/WeatherProvider";
